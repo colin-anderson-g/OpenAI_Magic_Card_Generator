@@ -6,6 +6,7 @@ class Colors(Enum):
     Black = "Black"
     Red = "Red"
     Green = "Green"
+    Colorless = "Colorless"
 
 class Types(Enum):
     Land = "Land"

@@ -19,7 +19,7 @@ json_format = """\nCreate a valid json object for the card into the following fo
     "Toughness": "The toughness of the card",
     "Loyalty": "The starting loyalty of the card",
     "Art-Description": "The description of the art of the card",
-    "Abilies": "The abilities of the card in an array",
+    "Abilities": "The abilities of the card in an array",
     "Flavor-Text": "The flavor text of the card",
 }"""
 

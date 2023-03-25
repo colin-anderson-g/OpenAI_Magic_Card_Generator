@@ -5,9 +5,9 @@ import card_arguments
 # openai_text_utils.generateWithArguments(card_arguments.CardArguments("True Near")) 
 # it can still be called like this using just the name of the card
 
-image_prompt = """Create art for a Magic the Gathering card named TrueNear"""
+#image_prompt = """Create art for a Magic the Gathering card named TrueNear"""
 
-openai_image_utils.generate(image_prompt)
+#openai_image_utils.generate(image_prompt)
 
 with open("input.txt", "r") as input_file:
     num_lines = sum(1 for line in open('input.txt'))
