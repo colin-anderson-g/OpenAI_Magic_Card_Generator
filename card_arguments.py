@@ -9,8 +9,12 @@ class CardArguments:
     types = []
 
     def __init__(self, input):
-        self.colors.clear()
-        self.types.clear() # I have some questions about this, so remind me
+        self.colors = []
+        self.types = []
+        self.Name = ""
+        self.rarity = ""
+        self.supertype = ""
+        self.keyword = ""
         string_arguments = input.split(",")
         self.Name = string_arguments[0]
         if len(string_arguments) > 1:

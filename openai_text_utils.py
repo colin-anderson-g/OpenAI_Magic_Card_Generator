@@ -15,9 +15,9 @@ json_format = """\nCreate a valid json object for the card into the following fo
     "Supertype": "The supertype of the card",
     "Subtype": "The subtypes of the card in an array",
     "Colors": "The colors of the card in an array",
-    "Power": The power of the card,
-    "Toughness": The toughness of the card,
-    "Loyalty": The starting loyalty of the card,
+    "Power": "The power of the card",
+    "Toughness": "The toughness of the card",
+    "Loyalty": "The starting loyalty of the card",
     "Art-Description": "The description of the art of the card",
     "Abilies": "The abilities of the card in an array",
     "Flavor-Text": "The flavor text of the card",
@@ -34,7 +34,8 @@ def generateWithArguments(cardarguments):
     output_file.write(response.choices[0].text)
     print(f"Response saved to {output_file_path}")
 
-def build_request(prompt, model="text-davinci-002", max_tokens=1024, temperature=0.5):
+
+def build_request(prompt, model="text-davinci-003", max_tokens=1024, temperature=0.5):
     request = {
         "model": model,
         "prompt": prompt,
@@ -42,6 +43,7 @@ def build_request(prompt, model="text-davinci-002", max_tokens=1024, temperature
         "max_tokens": max_tokens
     }
     return request
+
 
 def send_request(request):
     response = openai.Completion.create(**request)

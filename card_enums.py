@@ -24,3 +24,4 @@ class Rarity(Enum):
 
 class Supertype(Enum):
     Legendary = "Legendary"
+    Snow = "Snow"

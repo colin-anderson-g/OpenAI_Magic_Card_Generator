@@ -1,1 +1,5 @@
 /__pycache__
+/api_gen_properties.py
+*.txt
+*.jpg
+*.png
