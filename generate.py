@@ -15,6 +15,6 @@ with open("input.txt", "r") as input_file:
     for line in input_file:
         arguments = card_arguments.CardArguments(line)
         openai_text_utils.generateWithArguments(arguments)
-        print("finsihed with " + str(i) + "/" + str(num_lines) + "\n")
+        print("Finsihed with " + str(i) + "/" + str(num_lines) + "\n")
         i += 1
 

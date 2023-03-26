@@ -33,29 +33,29 @@ class CardArguments:
     def createStringArgument(self):
         output = self.Name
         if self.colors:
-            output += "\n" + self.Name + " has the colors: "
+            output += "\nit has the colors: "
             for color in self.colors:
                 output += color + " "
         if self.types:
-            output += "\n" + self.Name + " has the types: "
+            output += "\nit has the types: "
             for type in self.types:
                 output += type + " "
                 if type == "Land":
                     output += "with abilities"
         if self.subtypes:
-            output += "\n" + self.Name + " has the subtypes: "
+            output += "\nit has the subtypes: "
             for subtypes in self.subtypes:
                 output += subtypes + " "
         if self.keywords:
-            output += "\n" + self.Name + " has the keywords: "
+            output += "\nit has the keywords: "
             for keyword in self.keywords:
                 output += keyword + " "
         if self.rarity:
-            output += "\n" + self.Name + " has the rarity: " + self.rarity
+            output += "\nit has the rarity: " + self.rarity
         if self.supertype:
-            output += "\n" + self.Name + " has the supertype: " + self.supertype
+            output += "\nit has the supertype: " + self.supertype
         if self.cmc:
-            output += "\n" + self.Name + " has the converted mana cost: " + self.cmc
+            output += "\nit has the cmc: " + self.cmc
         return output
 
 def checkIsEnum(string, enum):
